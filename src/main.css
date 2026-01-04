@@ -70,7 +70,7 @@ h1 {
 .panel-no-list {
     text-align: center;
     font-variant: small-caps;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0;
 }
 
@@ -136,6 +136,23 @@ a:hover {
     color: var(--color-copyright);
     font-size: 0.95rem;
     margin: 2rem 0;
+}
+
+.social-strip {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: -1rem 0 2rem 0;
+}
+
+.social-icon {
+    transition: 0.3s;
+}
+
+.social-strip a:hover {
+    border-bottom: none;
+    transform: scale(1.18);
+    filter: drop-shadow(0 0 8px var(--color-link));
 }
 
 @media (max-width: 900px) {
