@@ -1,0 +1,148 @@
+:root {
+    --color-bg: #181a20;
+    --color-panel: #23262f;
+    --color-panel-border: #2c2f3a;
+    --color-text: #e3e7ee;
+    --color-heading: #dad7da;
+    --color-link: #7af7bf;
+    --color-link-hover: #a3f8df;
+    --color-li-hover: #43464f;
+    --color-copyright: #888;
+    --color-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.24);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+    color: var(--color-heading);
+}
+
+.panels-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.panel {
+    background: var(--color-panel);
+    border-radius: 1rem;
+    box-shadow: var(--color-shadow);
+    padding: 2rem 1.5rem;
+    margin-bottom: 0;
+    break-inside: avoid;
+    border: 1px solid var(--color-panel-border);
+}
+
+.panel h2 {
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    font-variant: small-caps;
+    font-size: 1.15rem;
+    text-align: center;
+
+    color: var(--color-heading);
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid var(--color-panel-border);
+    padding: 0rem 0 0.5rem 0;
+    background: transparent;
+}
+
+.panel-wide {
+    grid-column: 1 / span 2;
+}
+
+.panel-no-list {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.game-list ol {
+    column-width: auto;
+    column-gap: 0;
+    margin: 0.2rem 0;
+    padding-left: 1.5em;
+}
+
+.game-list li {
+    break-inside: avoid;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.2rem;
+    transition: 0.4s;
+    line-height: 1.5;
+    background: transparent;
+    color: var(--color-text);
+}
+
+.game-list li:hover {
+    background: var(--color-li-hover);
+}
+
+.game-meta {
+    color: var(--color-text);
+    font-weight: 200;
+}
+
+.game-meta::before {
+    content: " (";
+}
+
+.game-meta::after {
+    content: ")";
+}
+
+.game-meta-system + .game-meta-year::before {
+    content: ", ";
+}
+
+.game-extra {
+    color: var(--color-text);
+    font-variant: small-caps;
+    font-size: 0.85rem;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: var(--color-link-hover);
+    border-bottom: 1px solid var(--color-link-hover);
+}
+
+.copyright {
+    text-align: center;
+    color: var(--color-copyright);
+    font-size: 0.95rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 900px) {
+    .panels-grid {
+        grid-template-columns: 1fr;
+    }
+    .panel-wide {
+        grid-column: auto;
+    }
+}

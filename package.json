@@ -1,0 +1,23 @@
+{
+    "name": "homepage",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "check": "eslint . && prettier . --check",
+        "fix": "eslint . --fix && prettier . --w",
+        "dev": "vite",
+        "build": "npm run check && vite build"
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.3",
+        "eslint": "^9.39.2",
+        "eslint-config-prettier": "^10.1.8",
+        "jiti": "^2.6.1",
+        "prettier": "^3.7.4",
+        "tsx": "^4.21.0",
+        "typescript-eslint": "^8.51.0",
+        "vite": "^7.3.0",
+        "vite-plugin-html-minifier": "^1.0.5",
+        "vite-plugin-singlefile": "^2.3.0"
+    }
+}

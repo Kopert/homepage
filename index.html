@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Kopert</title>
+        <meta charset="UTF-8" />
+        <script type="module" src="src/main.ts"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Kopert's Game List</h1>
+            <div class="panels-grid">
+                <section class="panel">
+                    <h2>Currently Being Played</h2>
+                    <div class="game-list" id="ongoing"></div>
+                </section>
+                <section class="panel">
+                    <h2>Retrospectives Finished</h2>
+                    <div class="game-list" id="retrospectives"></div>
+                </section>
+                <section class="panel">
+                    <h2>Dropped Due to Crashing</h2>
+                    <div class="game-list" id="dropped-crashing"></div>
+                </section>
+                <section class="panel">
+                    <h2>Dropped Due to Utter Bullshit</h2>
+                    <div class="game-list" id="dropped-bullshit"></div>
+                </section>
+                <section class="panel panel-no-list">
+                    <p>
+                        <a href="https://youtube.com/playlist?list=PL6RaiovQ8kYuArUMx-5-AT02jTBXmDSIQ"
+                            >Special Streams</a
+                        >
+                    </p>
+                </section>
+                <section class="panel panel-no-list">
+                    <p>
+                        <a href="https://www.youtube.com/@KopertGaming">YouTube Archived VODs Channel</a>
+                    </p>
+                </section>
+                <section class="panel panel-wide">
+                    <h2>Finished</h2>
+                    <div class="game-list" id="finished"></div>
+                </section>
+            </div>
+            <footer class="copyright">Copyright © 2026 Kopert. All rights reserved.</footer>
+        </div>
+    </body>
+</html>
