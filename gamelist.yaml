@@ -1240,11 +1240,6 @@ finished:
       system: "DOS"
       year: "1993"
 ongoing:
-    - title: "The Patrician"
-      playlist: "PL6RaiovQ8kYsOnO08nwzrqhYZ9CUadmIs"
-      video: "5POK1idiSmo"
-      system: "DOS"
-      year: "1992"
     - title: "Illusion City: Gen'ei Toshi"
       playlist: "PL6RaiovQ8kYvLkF4e-Lp5NxxmorgBt983"
       video: "Mvp2sWklkJY"
@@ -1277,7 +1272,7 @@ droppedCrashing:
       video: "9pHaMM9lrhY"
       system: "Amiga"
       year: "1992"
-droppedBullshit:
+givenUp:
     - title: "Father World"
       playlist: "PL6RaiovQ8kYu3WO4CFEpNcDwYwaWG56gw"
       video: "KPSceuZkXwM"
@@ -1288,3 +1283,8 @@ droppedBullshit:
       video: "59UWrp6seFo"
       system: "Windows"
       year: "1996"
+    - title: "The Patrician"
+      playlist: "PL6RaiovQ8kYsOnO08nwzrqhYZ9CUadmIs"
+      video: "5POK1idiSmo"
+      system: "DOS"
+      year: "1992"
