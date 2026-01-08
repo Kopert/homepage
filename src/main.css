@@ -1,4 +1,3 @@
-/* Colors */
 :root {
     --color-bg: #171a1f;
     --color-panel: #22282f;
@@ -12,11 +11,19 @@
     --color-li-hover: #445;
     --color-copyright: #888;
     --color-shadow: #0005;
+    --color-kopert: #8fc042;
 }
 
 html {
     margin: 1rem 0.5rem;
-    font-family: "Inter", "Arial", sans-serif;
+    font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
     background: var(--color-bg);
     color: var(--color-text);
 }
@@ -46,22 +53,50 @@ html {
     margin-top: 0.5rem;
 }
 
-.logo-circle {
+.logo-container {
     width: clamp(4rem, 20vw, 8rem);
     height: clamp(4rem, 20vw, 8rem);
     flex-shrink: 0;
     border-radius: 50%;
-    overflow: hidden;
-    position: relative;
+    background-color: var(--color-kopert);
 }
 
-.logo-img {
-    width: clamp(5rem, 25vw, 10rem);
-    height: clamp(5rem, 25vw, 10rem);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.logo-svg {
+    width: 100%;
+    height: 100%;
+    background: url("./assets/kopert.svg") center / 125% no-repeat;
+    filter: drop-shadow(0 0.2rem 0.2rem var(--color-shadow));
+}
+
+.social-strip {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.social-icon {
+    transition: 0.3s;
+    width: clamp(3rem, 16vw, 5rem);
+    height: clamp(3rem, 16vw, 5rem);
+    background: center / 100% no-repeat;
+}
+
+.social-strip a:hover {
+    border-bottom: none;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.5rem var(--color-link));
+}
+
+.twitch-svg {
+    background-image: url("./assets/twitch.svg");
+}
+
+.discord-svg {
+    background-image: url("./assets/discord.svg");
+}
+.youtube-svg {
+    background-image: url("./assets/youtube.svg");
 }
 
 .panels-grid {
@@ -144,6 +179,7 @@ li:nth-child(odd) .game-entry {
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem var(--color-shadow);
     flex-shrink: 0;
+    background: url("assets/loading.svg") center / 50% no-repeat;
 }
 
 .game-thumbnail {
@@ -200,27 +236,8 @@ a:hover .game-title,
     margin: 2rem 0;
 }
 
-.social-strip {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 1rem;
-}
-
-.social-icon {
-    transition: 0.3s;
-    width: clamp(3rem, 16vw, 6.25rem);
-    height: clamp(3rem, 16vw, 6.25rem);
-}
-
-.social-strip a:hover {
-    border-bottom: none;
-    transform: scale(1.18);
-    filter: drop-shadow(0 0 0.5rem var(--color-link));
-}
-
 @media (max-width: 25rem) {
-    .logo-circle {
+    .logo-container {
         display: none;
     }
 }

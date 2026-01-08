@@ -26,7 +26,7 @@ export default function injectGamelists(): Plugin {
                         `<a href="${entry.video ? `https://youtu.be/${entry.video}&list=${entry.playlist}` : `https://youtube.com/playlist?list=${entry.playlist}`}" target="_blank">` +
                         `<div class="game-entry">` +
                         `<div class="game-thumbnail-container">` +
-                        `<img class="game-thumbnail" src="https://i.ytimg.com/vi/${entry.video}/default.jpg" alt="">` +
+                        `<img class="game-thumbnail" loading="lazy" src="https://i.ytimg.com/vi/${entry.video}/default.jpg" alt="">` +
                         `</div>` +
                         `<div class="game-info">` +
                         `<div class="game-title">${entry.title}</div>` +
