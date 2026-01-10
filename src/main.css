@@ -128,13 +128,6 @@ html {
     grid-column: 1 / span 2;
 }
 
-.panel-no-list {
-    text-align: center;
-    font-variant: small-caps;
-    font-size: 1.3rem;
-    padding: 0;
-}
-
 ol {
     list-style-type: none;
     margin: 0;
